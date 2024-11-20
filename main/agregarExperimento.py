@@ -19,11 +19,11 @@ def agregarExperimento(listaExperimentos):
     
     categorias = input('Ingrese la categoría del experimento:\nQuimica\nBiología\nFísica\n')
     
-    resultados_str = input('Ingrese el número de horas dedicadas (separe con comas si son varias): ')
+    resultados_str = input('Ingrese los resultados (separe con comas si son varias): ')
     try:
         resultados = list(map(float, resultados_str.split(',')))
     except ValueError:
-        print('Formato de horas no válido')
+        print('Formato de resultados no válido')
         return
 
     # Crear un objeto Experimento y agregarlo a la lista de experimentos
@@ -39,3 +39,4 @@ def agregarExperimento(listaExperimentos):
 #    print("\nLista de experimentos:")
 #    for exp in listaExperimentos:
 #        print(f"Nombre: {exp.nombreExperimento} \nFecha del experimento: {exp.fechaExperimento.strftime('%d/%m/%Y')} \nCategoría: {exp.categorias} \nResultados: {exp.resultados}\n")
+
