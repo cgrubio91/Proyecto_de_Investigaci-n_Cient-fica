@@ -21,7 +21,3 @@ def generarInforme(listaExperimentos):
             archivo.write(f'Conclusiones: {conclusiones}\n')
 
     print("Informe generado como 'informe de experimentos'")
-
-if __name__ == "__main__":
-    listaExperimentos = []  # Crear una lista vacía para los experimentos
-    generarInforme(listaExperimentos)
