@@ -1,5 +1,5 @@
 def menu():
-    listaTareas = []
+    listaExperimentos = []
     while True:
         print("\nMenú de opciones")
         print("1. Agregar experimento: ")
@@ -10,13 +10,13 @@ def menu():
 
         opcion = int(input('\nSeleccione el numero de su selección\n '))
         if opcion == 1:
-            agregarExperimento(listaTareas)
+            agregarExperimento(listaExperimentos)
         elif opcion == 2:
-            verExperimentos(listaTareas)
+            verExperimentos(listaExperimentos)
         elif opcion == 3:
-            analizarExperimentos(listaTareas)
+            analizarExperimentos(listaExperimentos)
         elif opcion == 4:
-            generarInforme(listaTareas)
+            generarInforme(listaExperimentos)
         elif opcion == 5:
             print('Saliendo del programa...')
             break
