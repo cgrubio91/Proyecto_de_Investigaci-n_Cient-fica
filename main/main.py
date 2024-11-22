@@ -40,7 +40,7 @@ def compararExperimentos(listaExperimentos):
     #Mostramos la lista de experimentos
     print("\n Lista de Experimentos")
     for i, experimento in enumerate(listaExperimentos, start=1):
-        print(f"\nExperimento {1}")
+        print(f"\nExperimento {i}")
         print(f"{i}. {experimento.nombreExperimento}")
         
     #Solicitamos al usuario seleccionar experimentos a comparar
@@ -48,12 +48,12 @@ def compararExperimentos(listaExperimentos):
         seleccion = input("Seleccione los numeros de los experimentos a comparar separados por comas (por ejemplo: 1,2,3): ")
         indices = [int(i.strip())-1 for i in seleccion.split(",") if i.strip().isdigit()]
 
-        #Validad seleccion
+        #Validar seleccion
         if any(i < 0 or i >= len(listaExperimentos) for i in indices):
             print("Seleccion invalida. Intente nuevamente")
             return
         
-        #Realizr comparacion
+        #Realizar comparacion
         print("\n Comparacion de Experimentos")
         mejoreResultados = []
         for i in indices:
@@ -113,17 +113,19 @@ def generarInforme(listaExperimentos):
 # Abrir un archivo txt para escribir el informe
     with open("Informe_experimentos.txt", "w") as archivo:
         archivo.write('*** INFORME DE EXPERIMENTOS ***\n\n')
-        archivo.write('+' * 40 + '\n\n')
+        archivo.write('*' * 40 + '\n\n')
         # Escribir los detalles del archivo txt
         for i, experimento in enumerate (listaExperimentos, 1):
             archivo.write(f'Nombre del experimento: {experimento.nombreExperimento}\n')
             archivo.write(f'Fecha del experimento: {experimento.fechaExperimento.strftime("%d/%m/%Y")}\n')
             archivo.write(f'Categoría: {experimento.categorias}\n')
             archivo.write(f'Resultados: {experimento.resultados} \n\n')
-            archivo.write('+' * 40 + '\n\n')
+            archivo.write('-' * 40 + '\n\n')
         conclusiones = input('¿Tienes conclusiones generales para el informe?\n')
         if conclusiones.strip():
+            archivo.write('*' * 40 + '\n\n')
             archivo.write(f'Conclusiones: {conclusiones}\n')
+            archivo.write(f'Autores:\nCristian Rubio\nWendy Torres\n')
 
     print("Informe generado como 'Informe_experimentos.txt'")
 
