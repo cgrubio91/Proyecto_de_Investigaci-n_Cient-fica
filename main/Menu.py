@@ -6,18 +6,21 @@ def menu():
         print("2. Ver experimentos: ")
         print("3. Analizar experimentos: ")
         print("4. Generar informe: ")
-        print("5. Salir")
+        print("5. Comparar experimentos: ")
+        print("6. Salir")
 
         opcion = int(input('\nSeleccione el numero de su selección\n '))
         if opcion == 1:
             agregarExperimento(listaExperimentos)
         elif opcion == 2:
-            verExperimentos(listaExperimentos)
+            visualizarExperimentos(listaExperimentos)
         elif opcion == 3:
-            analizarExperimentos(listaExperimentos)
+            calcularEstadisticas(listaExperimentos)
         elif opcion == 4:
             generarInforme(listaExperimentos)
         elif opcion == 5:
+            compararExperimentos(listaExperimentos)
+        elif opcion == 6:
             print('Saliendo del programa...')
             break
         else:
