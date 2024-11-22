@@ -18,7 +18,7 @@ def agregarExperimento(listaExperimentos):
         print('Fecha no válida. Intente nuevamente.')
         return
     
-    categorias = input('Ingrese la categoría del experimento:\nQuimica\nBiología\nFísica\n')
+    categorias = input('Ingrese la categoría del experimento:\n1. Quimica\n2. Biología\n3. Física\n¿Cual desea seleccionar?\n')
     
     resultados_str = input('Ingrese los resultados (separe con comas si son varias): ')
     try:
@@ -123,8 +123,8 @@ def generarInforme(listaExperimentos):
             archivo.write('-' * 40 + '\n\n')
         conclusiones = input('¿Tienes conclusiones generales para el informe?\n')
         if conclusiones.strip():
+            archivo.write(f'Conclusiones: {conclusiones}\n\n')
             archivo.write('*' * 40 + '\n\n')
-            archivo.write(f'Conclusiones: {conclusiones}\n')
             archivo.write(f'Autores:\nCristian Rubio\nWendy Torres\n')
 
     print("Informe generado como 'Informe_experimentos.txt'")

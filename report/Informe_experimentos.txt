@@ -1,0 +1,31 @@
+*** INFORME DE EXPERIMENTOS ***
+
+****************************************
+
+Nombre del experimento: qwe
+Fecha del experimento: 12/12/2022
+Categoría: Quimica
+Resultados: [5.0, 7.0, 8.0, 2.54] 
+
+----------------------------------------
+
+Nombre del experimento: dednsidades
+Fecha del experimento: 02/02/2022
+Categoría: Física
+Resultados: [4.0, 8.0, 5.0, 3.0] 
+
+----------------------------------------
+
+Nombre del experimento: pluviometría
+Fecha del experimento: 05/03/2021
+Categoría: Quimica
+Resultados: [5.0, 4.0, 7.0, 8.1454] 
+
+----------------------------------------
+
+Conclusiones: Este es un informe de prueba
+****************************************
+
+Autores:
+Cristian Rubio
+Wendy Torres
