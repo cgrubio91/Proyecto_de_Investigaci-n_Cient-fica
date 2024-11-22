@@ -1,0 +1,19 @@
+*** INFORME DE EXPERIMENTOS ***
+
+++++++++++++++++++++++++++++++++++++++++
+
+Nombre del experimento: Densidad Tipo A
+Fecha del experimento: 12/08/2024
+Categoría: Quimica
+Resultados: [5.0, 4.0, 7.0, 3.54] 
+
+++++++++++++++++++++++++++++++++++++++++
+
+Nombre del experimento: Densidad Tipo B
+Fecha del experimento: 23/12/2024
+Categoría: Quimica
+Resultados: [5.0, 7.0, 8.0, 2.14] 
+
+++++++++++++++++++++++++++++++++++++++++
+
+Conclusiones: Todo bien

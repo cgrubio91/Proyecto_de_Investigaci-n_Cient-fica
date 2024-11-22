@@ -49,7 +49,7 @@ def compararExperimentos(listaExperimentos):
         indices = [int(i.strip())-1 for i in seleccion.split(",") if i.strip().isdigit()]
 
         #Validad seleccion
-        if any(i < 0 or i >= len(listaExperimentos for i in indices)):
+        if any(i < 0 or i >= len(listaExperimentos) for i in indices):
             print("Seleccion invalida. Intente nuevamente")
             return
         
@@ -74,7 +74,7 @@ def compararExperimentos(listaExperimentos):
         #Identificar mejor y peor experimento
         mejor = max(mejoreResultados, key=lambda x: x["promedio"])
         peor = min(mejoreResultados, key=lambda x: x["promedio"])
-        print("\n Resultados de Comparacion")
+        print("\nResultados de Comparacion\n")
         print(f"Mejor experimento: {mejor['nombre']} con un promedio de {mejor['promedio']:.2f}")
         print(f"Peor experimento: {peor['nombre']} con un promedio de {peor['promedio']:.2f}")
     except ValueError:
@@ -99,7 +99,7 @@ def visualizarExperimentos (listaExperimentos):
         print ("No hay experimentos registrados")
         return
     for i, experimento in enumerate(listaExperimentos, start=1):
-        print(f"\nExperimento {1}")
+        print(f"\nExperimento {i}")
         print(f"Experimento: {experimento.nombreExperimento}")
         print(f"Fecha: {experimento.fechaExperimento.strftime('%d/%m/%Y')}")
         print(f"Categoria: {experimento.categorias}")
@@ -125,7 +125,7 @@ def generarInforme(listaExperimentos):
         if conclusiones.strip():
             archivo.write(f'Conclusiones: {conclusiones}\n')
 
-    print("Informe generado como 'informe de experimentos'")
+    print("Informe generado como 'Informe_experimentos.txt'")
 
 def menu():
     listaExperimentos = []

@@ -17,7 +17,7 @@ def compararExperimentos(listaExperimentos):
         indices = [int(i.strip())-1 for i in seleccion.split(",") if i.strip().isdigit()]
 
         #Validad seleccion
-        if any(i < 0 or i >= len(listaExperimentos for i in indices)):
+        if any(i < 0 or i >= len(listaExperimentos) for i in indices):
             print("Seleccion invalida. Intente nuevamente")
             return
         
