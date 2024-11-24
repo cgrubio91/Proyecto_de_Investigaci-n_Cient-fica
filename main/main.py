@@ -89,7 +89,7 @@ def calcularEstadisticas(listaExperimentos):
         promedio = statistics.mean(experimento.resultados)
         maximo = max(experimento.resultados)
         minimo = min(experimento.resultados)
-        print(f"\nAnalisis de {experimento.resultados}")
+        print(f"\nAnalisis de {experimento.nombreExperimento}")
         print(f"El promedio de los resultados es: {promedio}")
         print(f"Valor maximo de los resultados: {maximo}")
         print(f"Valor minimo de los resultados: {minimo}")
