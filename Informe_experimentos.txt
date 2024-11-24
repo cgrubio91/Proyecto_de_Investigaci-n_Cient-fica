@@ -1,0 +1,25 @@
+*** INFORME DE EXPERIMENTOS ***
+
+****************************************
+
+Nombre del experimento: Taller quimica
+Fecha del experimento: 20/01/2024
+Categoría: Química
+Resultados: [1.0, 5.0, 3.0] 
+
+----------------------------------------
+
+Nombre del experimento: taller fisica
+Fecha del experimento: 22/11/2024
+Categoría: Fisica
+Resultados: [2.0, 5.0, 4.2] 
+
+----------------------------------------
+
+Conclusiones: NA
+
+****************************************
+
+Autores:
+Cristian Rubio
+Wendy Torres

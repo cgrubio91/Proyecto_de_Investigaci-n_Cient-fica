@@ -1,6 +1,12 @@
 from datetime import datetime
 import statistics
 
+CATEGORIAS = {
+    "1": "Química",
+    "2": "Biologia",
+    "3": "Fisica"
+}
+
 class Experimento:
     def __init__(self, nombreExperimento, fechaExperimento, categorias, resultados):  # método constructor
         self.nombreExperimento = nombreExperimento
@@ -19,6 +25,9 @@ def agregarExperimento(listaExperimentos):
         return
     
     categorias = input('Ingrese la categoría del experimento:\n1. Quimica\n2. Biología\n3. Física\n¿Cual desea seleccionar?\n')
+    if categorias not in CATEGORIAS:
+        print("Categoria no valida. Intente nuevamente")
+        return
     
     resultados_str = input('Ingrese los resultados (separe con comas si son varias): ')
     try:
@@ -102,7 +111,7 @@ def visualizarExperimentos (listaExperimentos):
         print(f"\nExperimento {i}")
         print(f"Experimento: {experimento.nombreExperimento}")
         print(f"Fecha: {experimento.fechaExperimento.strftime('%d/%m/%Y')}")
-        print(f"Categoria: {experimento.categorias}")
+        print(f"Categoria: {CATEGORIAS.get(experimento.categorias, 'Desconocida')}")
         print(f"Resultados: {experimento.resultados}")
 
 def generarInforme(listaExperimentos):
@@ -118,7 +127,7 @@ def generarInforme(listaExperimentos):
         for i, experimento in enumerate (listaExperimentos, 1):
             archivo.write(f'Nombre del experimento: {experimento.nombreExperimento}\n')
             archivo.write(f'Fecha del experimento: {experimento.fechaExperimento.strftime("%d/%m/%Y")}\n')
-            archivo.write(f'Categoría: {experimento.categorias}\n')
+            archivo.write(f'Categoría: {CATEGORIAS.get(experimento.categorias, 'Desconocida')}\n')
             archivo.write(f'Resultados: {experimento.resultados} \n\n')
             archivo.write('-' * 40 + '\n\n')
         conclusiones = input('¿Tienes conclusiones generales para el informe?\n')
