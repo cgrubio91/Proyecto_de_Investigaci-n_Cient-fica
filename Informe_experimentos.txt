@@ -2,21 +2,42 @@
 
 ****************************************
 
-Nombre del experimento: Taller quimica
-Fecha del experimento: 20/01/2024
+Nombre del experimento: Densidad nuclear
+Fecha del experimento: 25/08/2024
 Categoría: Química
-Resultados: [1.0, 5.0, 3.0] 
+Resultados: [4.0, 8.0, 5.0, 2.35] 
 
 ----------------------------------------
 
-Nombre del experimento: taller fisica
-Fecha del experimento: 22/11/2024
+Nombre del experimento: Granulometria
+Fecha del experimento: 01/02/2024
 Categoría: Fisica
-Resultados: [2.0, 5.0, 4.2] 
+Resultados: [5.0, 5.23, 5.12, 4.96] 
 
 ----------------------------------------
 
-Conclusiones: NA
+Nombre del experimento: Fallo de concreto
+Fecha del experimento: 13/05/2023
+Categoría: Fisica
+Resultados: [8.54, 2.54, 5.34, 6.7] 
+
+----------------------------------------
+
+Nombre del experimento: Elementos mayores N-P-K
+Fecha del experimento: 27/11/2024
+Categoría: Biologia
+Resultados: [0.9, 0.89, 0.75, 0.98] 
+
+----------------------------------------
+
+Nombre del experimento: Densidad asfaltica
+Fecha del experimento: 13/06/2024
+Categoría: Fisica
+Resultados: [4.0, 4.0, 4.2, 3.9] 
+
+----------------------------------------
+
+Conclusiones: Estos ensayos fueron realizados para la Universidad Iberoamericana.
 
 ****************************************
 

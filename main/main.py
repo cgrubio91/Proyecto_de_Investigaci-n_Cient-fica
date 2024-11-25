@@ -127,7 +127,7 @@ def generarInforme(listaExperimentos):
         for i, experimento in enumerate (listaExperimentos, 1):
             archivo.write(f'Nombre del experimento: {experimento.nombreExperimento}\n')
             archivo.write(f'Fecha del experimento: {experimento.fechaExperimento.strftime("%d/%m/%Y")}\n')
-            archivo.write(f'Categoría: {CATEGORIAS.get(experimento.categorias, 'Desconocida')}\n')
+            archivo.write(f"Categoría: {CATEGORIAS.get(experimento.categorias, 'Desconocida')}\n")
             archivo.write(f'Resultados: {experimento.resultados} \n\n')
             archivo.write('-' * 40 + '\n\n')
         conclusiones = input('¿Tienes conclusiones generales para el informe?\n')
