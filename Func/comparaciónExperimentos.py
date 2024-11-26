@@ -52,7 +52,7 @@ def compararExperimentos(listaExperimentos):
  #.split(",") Divide la cadena de texto en una lista de subcadenas usando coma (,) como separador
  #.strip() Elimina los espacios en blanco al inicio y al final de la cadena de {i}
  #.strip().isdigit() Este filtro comprueba si la cadena resultando de .strip() contiene solo digitos, asegurando que solo se procesen entradas validas
- # int(i.strip())-1 Convierte la cadena (Ya limpiada y validada en un numero entero con int(), luego le resta 1, esto por que los indices en Pythin inician desde 0
+ # int(i.strip())-1 Convierte la cadena (Ya limpiada y validada en un numero entero con int(), luego le resta 1, esto por que los indices en Python inician desde 0
  #.2f se utiliza para mostrar un numero decimal con 2 cifras decimales, se controla como se presenta un numero flotante
  #         
     

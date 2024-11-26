@@ -1,8 +1,8 @@
 from datetime import datetime
 import statistics
-
+#Creacion de diccionario con las categorias del programa, lo usamos para mostrar la categoria
 CATEGORIAS = {
-    "1": "Química",
+    "1": "Quimica",
     "2": "Biologia",
     "3": "Fisica"
 }
