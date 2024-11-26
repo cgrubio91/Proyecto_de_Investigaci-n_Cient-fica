@@ -2,9 +2,9 @@ from datetime import datetime
 import statistics
 #Creacion de diccionario con las categorias del programa, lo usamos para mostrar la categoria
 CATEGORIAS = {
-    "1": "Quimica",
-    "2": "Biologia",
-    "3": "Fisica"
+    "1": "Química",
+    "2": "Biología",
+    "3": "Física"
 }
 
 class Experimento:
@@ -26,7 +26,7 @@ def agregarExperimento(listaExperimentos):
     
     categorias = input('Ingrese la categoría del experimento:\n1. Quimica\n2. Biología\n3. Física\n¿Cual desea seleccionar?\n')
     if categorias not in CATEGORIAS:
-        print("Categoria no valida. Intente nuevamente")
+        print("Categoría no valida. Intente nuevamente")
         return
     
     resultados_str = input('Ingrese los resultados (separe con comas si son varias): ')
@@ -43,7 +43,7 @@ def agregarExperimento(listaExperimentos):
 
 def compararExperimentos(listaExperimentos):
     if len(listaExperimentos) < 2:
-        print("Se necesitan al menos 2 experimentos para realizar la comparacion")
+        print("Se necesitan al menos 2 experimentos para realizar la comparación")
         return
     
     #Mostramos la lista de experimentos
@@ -54,7 +54,7 @@ def compararExperimentos(listaExperimentos):
         
     #Solicitamos al usuario seleccionar experimentos a comparar
     try:
-        seleccion = input("Seleccione los numeros de los experimentos a comparar separados por comas (por ejemplo: 1,2,3): ")
+        seleccion = input("Seleccione los números de los experimentos a comparar separados por comas (por ejemplo: 1,2,3): ")
         indices = [int(i.strip())-1 for i in seleccion.split(",") if i.strip().isdigit()]
 
         #Validar seleccion
@@ -63,7 +63,7 @@ def compararExperimentos(listaExperimentos):
             return
         
         #Realizar comparacion
-        print("\n Comparacion de Experimentos")
+        print("\n Comparación de Experimentos")
         mejoreResultados = []
         for i in indices:
             experimento = listaExperimentos[i]
@@ -120,7 +120,7 @@ def generarInforme(listaExperimentos):
         return
     
 # Abrir un archivo txt para escribir el informe
-    with open("Informe_experimentos.txt", "w") as archivo:
+    with open("Informe_experimentos.txt", "w", encoding="utf-8") as archivo:
         archivo.write('*** INFORME DE EXPERIMENTOS ***\n\n')
         archivo.write('*' * 40 + '\n\n')
         # Escribir los detalles del archivo txt
