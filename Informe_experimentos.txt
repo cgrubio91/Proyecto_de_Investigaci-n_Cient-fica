@@ -2,14 +2,21 @@
 
 ****************************************
 
-Nombre del experimento: Densidad
-Fecha del experimento: 11/11/2024
-Categoría: Biología
-Resultados: [4.0, 5.0, 4.0, 4.35] 
+Nombre del experimento: Densidad tipo A
+Fecha del experimento: 30/11/2024
+Categoría: Física
+Resultados: [4.0, 5.0, 4.23] 
 
 ----------------------------------------
 
-Conclusiones: no
+Nombre del experimento: Densidad Tipo 3
+Fecha del experimento: 29/11/2024
+Categoría: Física
+Resultados: [7.0, 7.23, 7.47] 
+
+----------------------------------------
+
+Conclusiones: Durante los ensayos de densidades, no se presentaron inconvenientes.
 
 ****************************************
 

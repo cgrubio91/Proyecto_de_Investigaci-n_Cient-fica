@@ -1,6 +1,7 @@
 from datetime import datetime
 import statistics
 #Creacion de diccionario con las categorias del programa, lo usamos para mostrar la categoria
+#Wendy
 CATEGORIAS = {
     "1": "Química",
     "2": "Biología",
@@ -88,7 +89,7 @@ def compararExperimentos(listaExperimentos):
         print(f"Peor experimento: {peor['nombre']} con un promedio de {peor['promedio']:.2f}")
     except ValueError:
         print("Entrada invalida. Intente nuevamente.")
-
+### Cristian ###
 def calcularEstadisticas(listaExperimentos):
     if not listaExperimentos:
         print("No hay experimentos registrados")
