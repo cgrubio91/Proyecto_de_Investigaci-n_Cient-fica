@@ -2,21 +2,14 @@
 
 ****************************************
 
-Nombre del experimento: Taller fisica
-Fecha del experimento: 11/02/2024
-Categoría: Fisica
-Resultados: [1.0, 2.0, 3.2] 
+Nombre del experimento: Densidad
+Fecha del experimento: 11/11/2024
+Categoría: Biología
+Resultados: [4.0, 5.0, 4.0, 4.35] 
 
 ----------------------------------------
 
-Nombre del experimento: Taller Biologia
-Fecha del experimento: 12/03/2024
-Categoría: Biologia
-Resultados: [5.1, 4.2, 6.0] 
-
-----------------------------------------
-
-Conclusiones: Prueba informe carácteres especiales
+Conclusiones: no
 
 ****************************************
 
